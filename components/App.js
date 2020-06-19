@@ -1,6 +1,21 @@
 class Nav extends React.Component {
-
+    constructor(){
+        super();
+        this.handleClick = this.handleClick.bind(this);
+    }
+    state = {
+        toggle: true,
+        opacity: true
+    }
+    handleClick(){
+        this.setState({ toggle: !this.state.toggle, opacity: !this.state.opacity })
+    }
     render() {
+        let currentOpacity = this.state.opacity ? 1 : 0;
+
+        const navStyle = {
+            opacity: currentOpacity
+        }
         return (
 
             <nav>
@@ -8,31 +23,31 @@ class Nav extends React.Component {
                 
                     <div id="navLogoDiv"><span>&#x270E;</span></div>
         
-                    <ul id="navLinks">
-                        <li><a href="index.html">HOME</a></li>
+                    <ul id="navLinks" style={navStyle}>
+                        <li><a href="https://aerinkayne.github.io/index.html">HOME</a></li>
 
                         <li className="dropdown">
                             <a href="#">CSS Projects</a>
                             <ul className="dropdownContent">
-                                <li><a href="gridRadio.html">Grid Radio</a></li>
-                                <li><a href="negSpace.html">Image Masking</a></li>
-                                <li><a href="#">Banners</a></li>
+                                <li><a href="https://aerinkayne.github.io/gridRadio.html">Grid Radio</a></li>
+                                <li><a href="https://aerinkayne.github.io/negSpace.html">Image Masking</a></li>
+                                <li><a href="#">Darklight</a></li>
                             </ul>
                         </li>
         
                         <li className="dropdown">
                             <a href="#">JS Projects</a>
                             <ul className="dropdownContent">
-                                <li><a href="seasons_p5.html">Seasons Spin Off</a></li>
-                                <li><a href="invaders.html">Space Invaders</a></li>
-                                <li><a href="fishtank.html">Canvas Art</a></li>
-                                <li><a href="freeCodeCampProjects/tetris/index.html">Tetris</a></li>
-                                <li><a href="freeCodeCampProjects/weatherApp/index.html">Weather App</a></li>
+                                <li><a href="https://aerinkayne.github.io/seasons_p5.html">Seasons Spin Off</a></li>
+                                <li><a href="https://aerinkayne.github.io/invaders.html">Space Invaders</a></li>
+                                <li><a href="https://aerinkayne.github.io/fishtank.html">Canvas Art</a></li>
+                                <li><a href="https://aerinkayne.github.io/freeCodeCampProjects/tetris/index.html">Tetris</a></li>
+                                <li><a href="https://aerinkayne.github.io/freeCodeCampProjects/weatherApp/index.html">Weather App</a></li>
                             </ul>
                         </li>
                     </ul>
                     
-                    <div id="burger">
+                    <div id="burger" onClick={this.handleClick} className={this.state.toggle && 'burgX'}>
                         <div className="topB"></div>
                         <div className="midB"></div>
                         <div className="btmB"></div>
@@ -52,8 +67,9 @@ class MainContent extends React.Component {
                 <div className="center">
                     <p>These elements were created using sass mixins and functions to generate class names.</p>
                     <p>React was used to simplify the HTML source, and because I might add some sort of interactivity that could make use of it in the future.  Making things like this is also just a good way for me to get used to using React.</p>
+                    <Darklight />
                 </div>
-                <Darklight />
+                
                 
             </div>
         )
