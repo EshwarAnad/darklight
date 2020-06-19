@@ -1,0 +1,540 @@
+
+#darklight {
+    position: relative;
+    margin: auto;
+    margin-top: 5em;
+    height: 30vw;
+    width: 50vw;
+    min-width: calc(0.50*600px);
+    min-height: calc(0.30*600px);
+    max-width: calc(0.50*1400px);
+    max-height: calc(0.30*1400px); 
+    border-radius: 50%;
+    animation: rotation 8s linear infinite;
+}
+@keyframes rotation {
+    from {transform: rotate(360deg)}
+    to {transform: rotate(0deg)}
+}
+
+
+#light, #dark {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+}
+#dark {
+  top: 0%;
+  left: 0%;
+}
+
+/*from sass*/
+.darken.d_0 {
+  position: absolute;
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  background-color: #fffffb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4s linear infinite;
+          animation: rotation 4s linear infinite;
+}
+
+.darken.d_1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 9.75%;
+  height: 9.75%;
+  background-color: #faffef;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.1s linear infinite;
+          animation: rotation 4.1s linear infinite;
+}
+
+.darken.d_2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 14.5%;
+  height: 14.5%;
+  background-color: #eeffe3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.2s linear infinite;
+          animation: rotation 4.2s linear infinite;
+}
+
+.darken.d_3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 19.25%;
+  height: 19.25%;
+  background-color: #dbffd7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.3s linear infinite;
+          animation: rotation 4.3s linear infinite;
+}
+
+.darken.d_4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 24%;
+  height: 24%;
+  background-color: #cbffd5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.4s linear infinite;
+          animation: rotation 4.4s linear infinite;
+}
+
+.darken.d_5 {
+  position: absolute;
+  border-radius: 50%;
+  width: 28.75%;
+  height: 28.75%;
+  background-color: #beffdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.5s linear infinite;
+          animation: rotation 4.5s linear infinite;
+}
+
+.darken.d_6 {
+  position: absolute;
+  border-radius: 50%;
+  width: 33.5%;
+  height: 33.5%;
+  background-color: #b2fff0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.6s linear infinite;
+          animation: rotation 4.6s linear infinite;
+}
+
+.darken.d_7 {
+  position: absolute;
+  border-radius: 50%;
+  width: 38.25%;
+  height: 38.25%;
+  background-color: #a6f6ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.7s linear infinite;
+          animation: rotation 4.7s linear infinite;
+}
+
+.darken.d_8 {
+  position: absolute;
+  border-radius: 50%;
+  width: 43%;
+  height: 43%;
+  background-color: #9ad7ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.8s linear infinite;
+          animation: rotation 4.8s linear infinite;
+}
+
+.darken.d_9 {
+  position: absolute;
+  border-radius: 50%;
+  width: 47.75%;
+  height: 47.75%;
+  background-color: #8eb0ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.9s linear infinite;
+          animation: rotation 4.9s linear infinite;
+}
+
+.darken.d_10 {
+  position: absolute;
+  border-radius: 50%;
+  width: 52.5%;
+  height: 52.5%;
+  background-color: #8282ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5s linear infinite;
+          animation: rotation 5s linear infinite;
+}
+
+.darken.d_11 {
+  position: absolute;
+  border-radius: 50%;
+  width: 57.25%;
+  height: 57.25%;
+  background-color: #9f76ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.1s linear infinite;
+          animation: rotation 5.1s linear infinite;
+}
+
+.darken.d_12 {
+  position: absolute;
+  border-radius: 50%;
+  width: 62%;
+  height: 62%;
+  background-color: #c36aff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.2s linear infinite;
+          animation: rotation 5.2s linear infinite;
+}
+
+.darken.d_13 {
+  position: absolute;
+  border-radius: 50%;
+  width: 66.75%;
+  height: 66.75%;
+  background-color: #ef5eff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.3s linear infinite;
+          animation: rotation 5.3s linear infinite;
+}
+
+.darken.d_14 {
+  position: absolute;
+  border-radius: 50%;
+  width: 71.5%;
+  height: 71.5%;
+  background-color: #ff51dc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.4s linear infinite;
+          animation: rotation 5.4s linear infinite;
+}
+
+.darken.d_15 {
+  position: absolute;
+  border-radius: 50%;
+  width: 76.25%;
+  height: 76.25%;
+  background-color: #ff45a2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.5s linear infinite;
+          animation: rotation 5.5s linear infinite;
+}
+
+.darken.d_16 {
+  position: absolute;
+  border-radius: 50%;
+  width: 81%;
+  height: 81%;
+  background-color: #ff3961;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.6s linear infinite;
+          animation: rotation 5.6s linear infinite;
+}
+
+.darken.d_17 {
+  position: absolute;
+  border-radius: 50%;
+  width: 85.75%;
+  height: 85.75%;
+  background-color: #ff422d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.7s linear infinite;
+          animation: rotation 5.7s linear infinite;
+}
+
+.darken.d_18 {
+  position: absolute;
+  border-radius: 50%;
+  width: 90.5%;
+  height: 90.5%;
+  background-color: #ff7a21;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.8s linear infinite;
+          animation: rotation 5.8s linear infinite;
+}
+
+.darken.d_19 {
+  position: absolute;
+  border-radius: 50%;
+  width: 95.25%;
+  height: 95.25%;
+  background-color: #ffb915;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.9s linear infinite;
+          animation: rotation 5.9s linear infinite;
+}
+
+.darken.d_20 {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffff09;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 6s linear infinite;
+          animation: rotation 6s linear infinite;
+}
+
+.lighten.d_0 {
+  position: absolute;
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  background-color: #000203;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4s linear infinite;
+          animation: rotation 4s linear infinite;
+}
+
+.lighten.d_1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 9.75%;
+  height: 9.75%;
+  background-color: #00060f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.1s linear infinite;
+          animation: rotation 4.1s linear infinite;
+}
+
+.lighten.d_2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 14.5%;
+  height: 14.5%;
+  background-color: #00021b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.2s linear infinite;
+          animation: rotation 4.2s linear infinite;
+}
+
+.lighten.d_3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 19.25%;
+  height: 19.25%;
+  background-color: #090027;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.3s linear infinite;
+          animation: rotation 4.3s linear infinite;
+}
+
+.lighten.d_4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 24%;
+  height: 24%;
+  background-color: #1b0033;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.4s linear infinite;
+          animation: rotation 4.4s linear infinite;
+}
+
+.lighten.d_5 {
+  position: absolute;
+  border-radius: 50%;
+  width: 28.75%;
+  height: 28.75%;
+  background-color: #350040;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.5s linear infinite;
+          animation: rotation 4.5s linear infinite;
+}
+
+.lighten.d_6 {
+  position: absolute;
+  border-radius: 50%;
+  width: 33.5%;
+  height: 33.5%;
+  background-color: #4c0042;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.6s linear infinite;
+          animation: rotation 4.6s linear infinite;
+}
+
+.lighten.d_7 {
+  position: absolute;
+  border-radius: 50%;
+  width: 38.25%;
+  height: 38.25%;
+  background-color: #580032;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.7s linear infinite;
+          animation: rotation 4.7s linear infinite;
+}
+
+.lighten.d_8 {
+  position: absolute;
+  border-radius: 50%;
+  width: 43%;
+  height: 43%;
+  background-color: #64001b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.8s linear infinite;
+          animation: rotation 4.8s linear infinite;
+}
+
+.lighten.d_9 {
+  position: absolute;
+  border-radius: 50%;
+  width: 47.75%;
+  height: 47.75%;
+  background-color: #700400;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 4.9s linear infinite;
+          animation: rotation 4.9s linear infinite;
+}
+
+.lighten.d_10 {
+  position: absolute;
+  border-radius: 50%;
+  width: 52.5%;
+  height: 52.5%;
+  background-color: #7c2900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5s linear infinite;
+          animation: rotation 5s linear infinite;
+}
+
+.lighten.d_11 {
+  position: absolute;
+  border-radius: 50%;
+  width: 57.25%;
+  height: 57.25%;
+  background-color: #885600;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.1s linear infinite;
+          animation: rotation 5.1s linear infinite;
+}
+
+.lighten.d_12 {
+  position: absolute;
+  border-radius: 50%;
+  width: 62%;
+  height: 62%;
+  background-color: #948a00;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.2s linear infinite;
+          animation: rotation 5.2s linear infinite;
+}
+
+.lighten.d_13 {
+  position: absolute;
+  border-radius: 50%;
+  width: 66.75%;
+  height: 66.75%;
+  background-color: #7ba000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.3s linear infinite;
+          animation: rotation 5.3s linear infinite;
+}
+
+.lighten.d_14 {
+  position: absolute;
+  border-radius: 50%;
+  width: 71.5%;
+  height: 71.5%;
+  background-color: #51ad00;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.4s linear infinite;
+          animation: rotation 5.4s linear infinite;
+}
+
+.lighten.d_15 {
+  position: absolute;
+  border-radius: 50%;
+  width: 76.25%;
+  height: 76.25%;
+  background-color: #1fb900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.5s linear infinite;
+          animation: rotation 5.5s linear infinite;
+}
+
+.lighten.d_16 {
+  position: absolute;
+  border-radius: 50%;
+  width: 81%;
+  height: 81%;
+  background-color: #00c51a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.6s linear infinite;
+          animation: rotation 5.6s linear infinite;
+}
+
+.lighten.d_17 {
+  position: absolute;
+  border-radius: 50%;
+  width: 85.75%;
+  height: 85.75%;
+  background-color: #00d15b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.7s linear infinite;
+          animation: rotation 5.7s linear infinite;
+}
+
+.lighten.d_18 {
+  position: absolute;
+  border-radius: 50%;
+  width: 90.5%;
+  height: 90.5%;
+  background-color: #00dda2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.8s linear infinite;
+          animation: rotation 5.8s linear infinite;
+}
+
+.lighten.d_19 {
+  position: absolute;
+  border-radius: 50%;
+  width: 95.25%;
+  height: 95.25%;
+  background-color: #00e1e9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 5.9s linear infinite;
+          animation: rotation 5.9s linear infinite;
+}
+
+.lighten.d_20 {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #00a4f5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0.75)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.75));
+  -webkit-animation: rotation 6s linear infinite;
+          animation: rotation 6s linear infinite;
+}
