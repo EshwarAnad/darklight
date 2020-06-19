@@ -1,8 +1,11 @@
 #darklight {
     position: relative;
-    
     height: 30vw;
+    min-height: calc(0.3*600px);
+    max-height: calc(0.3*1400px);
     width: 45vw;
+    min-width: calc(0.45*600px);
+    max-width: calc(0.45*1400px);
     border-radius: 50%;
     animation: rotation 8s linear infinite;
 }
@@ -14,8 +17,8 @@
 
 #light, #dark {
   position: absolute;
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -24,8 +27,8 @@
   left: 25%;
 }
 #dark {
-  height: 40%;
-  width: 40%;
+  height: 50%;
+  width: 50%;
   top: 60%;
 }
 
