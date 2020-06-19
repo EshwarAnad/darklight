@@ -10,16 +10,141 @@
 </head>
 <body>
 	
+	<nav>
+		<div class="navContentContainer">
+		
+			<div id="navLogoDiv"><span>&#x270E;</span></div>
 
+			<ul id="navLinks">
+				<li><a href="https://aerinkayne.github.io/index.html">HOME</a></li>
 
-	<div id="root">
+				<li class="dropdown">
+					<a href="#">CSS Projects</a>
+					<ul class="dropdownContent">
+						<li><a href="https://aerinkayne.github.io/gridRadio.html">Grid Radio</a></li>
+						<li><a href="https://aerinkayne.github.io/negSpace.html">Image Masking</a></li>
+						<li><a href="#">Darklight</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="#">JS Projects</a>
+					<ul class="dropdownContent">
+						<li><a href="https://aerinkayne.github.io/seasons_p5.html">Seasons Spin Off</a></li>
+						<li><a href="https://aerinkayne.github.io/invaders.html">Space Invaders</a></li>
+						<li><a href="https://aerinkayne.github.io/fishtank.html">Canvas Art</a></li>
+						<li><a href="https://aerinkayne.github.io/freeCodeCampProjects/tetris/index.html">Tetris</a></li>
+						<li><a href="https://aerinkayne.github.io/freeCodeCampProjects/weatherApp/index.html">Weather App</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div id="burger">
+				<div class="topB"></div>
+				<div class="midB"></div>
+				<div class="btmB"></div>
+			</div>
+		
+		</div>
+	</nav>
+
+	<div id="pageContent">
+
+		<div class="center">
+			<p>These elements were created using sass mixins and looping functions to generate class names.</p>
+			<p>I might add some interactivity later, but for now they are just some strange eye candy.</p>
+			<br />
+			<br />
+			<br />
+			<div id="darklight">
+				<div id="dark">
+					<div class="lighten d_20"></div>
+					<div class="lighten d_19"></div>
+					<div class="lighten d_18"></div>
+					<div class="lighten d_17"></div>
+					<div class="lighten d_16"></div>
+					<div class="lighten d_15"></div>
+					<div class="lighten d_14"></div>
+					<div class="lighten d_13"></div>
+					<div class="lighten d_12"></div>
+					<div class="lighten d_11"></div>
+					<div class="lighten d_10"></div>
+					<div class="lighten d_9"></div>
+					<div class="lighten d_8"></div>
+					<div class="lighten d_7"></div>
+					<div class="lighten d_6"></div>
+					<div class="lighten d_5"></div>
+					<div class="lighten d_4"></div>
+					<div class="lighten d_3"></div>
+					<div class="lighten d_2"></div>
+					<div class="lighten d_1"></div>
+					<div class="lighten d_0"></div>
+				</div>
+
+				<div id="light">
+					<div class="darken d_20"></div>
+					<div class="darken d_19"></div>
+					<div class="darken d_18"></div>
+					<div class="darken d_17"></div>
+					<div class="darken d_16"></div>
+					<div class="darken d_15"></div>
+					<div class="darken d_14"></div>
+					<div class="darken d_13"></div>
+					<div class="darken d_12"></div>
+					<div class="darken d_11"></div>
+					<div class="darken d_10"></div>
+					<div class="darken d_9"></div>
+					<div class="darken d_8"></div>
+					<div class="darken d_7"></div>
+					<div class="darken d_6"></div>
+					<div class="darken d_5"></div>
+					<div class="darken d_4"></div>
+					<div class="darken d_3"></div>
+					<div class="darken d_2"></div>
+					<div class="darken d_1"></div>
+					<div class="darken d_0"></div>
+				</div>
+
+			</div>
+			
+		</div>
+		
 	</div>
 	  
-	<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>  
-	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<footer>
+            
+		<ul id="footerLinks">				
+			<li class="first">
+				<a href="https://simpleicons.org/">
+					<img id="si" height="24" width="24" src="svg/simpleicons.svg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.pexels.com/">
+					<img id="pex" height="24" width="24" src="svg/pexels.svg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.deviantart.com/aerin-kayne">
+					<img id="da" height="24" width="24" src="svg/deviantart.svg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://www.artstation.com/aerin-kayne">
+					<img id="as" height="24" width="24" src="svg/artstation.svg" />
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/aerinkayne">
+					<img height="24" width="24" id="gh" src="svg/github.svg" />
+				</a>
+			</li>
+			<li class="last"><a href="mailto:darth_kayne@yahoo.com">Contact</a></li>
+		</ul>
+	
+	</footer>	
 
-	<script src="/components/App.js" type="text/babel"></script>
+	<script src="myScript.js"></script>
 
 	
 </body>

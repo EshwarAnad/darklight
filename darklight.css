@@ -1,17 +1,10 @@
-
 #darklight {
     position: relative;
-    margin: auto;
-    margin-top: 5em;
+    
     height: 30vw;
     width: 45vw;
-    min-width: calc(0.45*600px);
-    min-height: calc(0.30*600px);
-    max-width: calc(0.45*1400px);
-    max-height: calc(0.30*1400px); 
     border-radius: 50%;
     animation: rotation 8s linear infinite;
-
 }
 @keyframes rotation {
     from {transform: rotate(360deg)}
@@ -31,7 +24,9 @@
   left: 25%;
 }
 #dark {
-  top: 50%;
+  height: 40%;
+  width: 40%;
+  top: 60%;
 }
 
 /*from sass*/
