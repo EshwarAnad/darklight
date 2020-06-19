@@ -217,11 +217,10 @@ nav {
 }
 
 /*showNav class is toggled with event listener on #burger div*/
-/*
 #navLinks.showNav {
   visibility: visible;
   opacity: 1;
-}*/
+}
 
 #navLinks > li:hover {
   border-left: 3px solid #c8fff0;
