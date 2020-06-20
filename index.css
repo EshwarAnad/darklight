@@ -24,17 +24,6 @@ p {
   padding: 1%;
 }
 
-div.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 1.5em auto;
-  width: 75%;
-  min-height: 100vh;
-  line-height: 1.6;
-}
-
-
 
 #pageContent {
   width: 90vw;
@@ -45,6 +34,7 @@ div.container {
   background-image: linear-gradient(180deg, #c8c8d4, #99a);
   margin: 0 auto;
   padding-bottom: 50px;
+  
   padding-top: 5px;
   -webkit-box-shadow: 0 4px 6px rgba(175,190,200,0.8);
   box-shadow: 0 4px 6px rgba(175,190,200,0.8);
