@@ -2,21 +2,54 @@
   from {transform: rotate(360deg)}
   to {transform: rotate(0deg)}
 }
-div.container {
-  margin: 1.5em auto;
-  width: 75%;
+#description {
   line-height: 1.6;
-  min-height: 60vw;
+  width: 80%;
+  margin-left: 10%;
+  padding: 0.25em;
 }
-#darklight {
-  margin: 2em auto;
+#container {
   position: relative;
-  width: 50vw;
+  margin: 1.5em auto;
+  width: 80%;
   height: 60vw;
   min-height: calc(0.6*600px);
   max-height: calc(0.6*1400px);
-  min-width: calc(0.5*600px);
-  max-width: calc(0.5*1400px);
+  background-color: #888;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px outset #556;
+  box-shadow: 0 0 3px 20px rgba(0,0, 10,0.5) inset;
+}
+#blackBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 50%;
+  background-color: #111;
+  box-shadow: 0 0 10px 2px rgb(255,255,255);
+}
+#whiteBox {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  right: 0;
+  top: 50%;
+  background-color: #efefef;
+  box-shadow: 0 0 10px 2px rgb(0,0,0);
+}
+#darklight {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  height: 70%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,11 +69,6 @@ div.container {
           animation: rotation 8s linear infinite;
 }
 
-.darken.d_0:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_1 {
   position: absolute;
   border-radius: 50%;
@@ -51,11 +79,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 8.1s linear infinite;
           animation: rotation 8.1s linear infinite;
-}
-
-.darken.d_1:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_2 {
@@ -70,11 +93,6 @@ div.container {
           animation: rotation 8.2s linear infinite;
 }
 
-.darken.d_2:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_3 {
   position: absolute;
   border-radius: 50%;
@@ -85,11 +103,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 8.3s linear infinite;
           animation: rotation 8.3s linear infinite;
-}
-
-.darken.d_3:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_4 {
@@ -104,11 +117,6 @@ div.container {
           animation: rotation 8.4s linear infinite;
 }
 
-.darken.d_4:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_5 {
   position: absolute;
   border-radius: 50%;
@@ -119,11 +127,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 8.5s linear infinite;
           animation: rotation 8.5s linear infinite;
-}
-
-.darken.d_5:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_6 {
@@ -138,11 +141,6 @@ div.container {
           animation: rotation 8.6s linear infinite;
 }
 
-.darken.d_6:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_7 {
   position: absolute;
   border-radius: 50%;
@@ -153,11 +151,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 8.7s linear infinite;
           animation: rotation 8.7s linear infinite;
-}
-
-.darken.d_7:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_8 {
@@ -172,11 +165,6 @@ div.container {
           animation: rotation 8.8s linear infinite;
 }
 
-.darken.d_8:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_9 {
   position: absolute;
   border-radius: 50%;
@@ -187,11 +175,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 8.9s linear infinite;
           animation: rotation 8.9s linear infinite;
-}
-
-.darken.d_9:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_10 {
@@ -206,11 +189,6 @@ div.container {
           animation: rotation 9s linear infinite;
 }
 
-.darken.d_10:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_11 {
   position: absolute;
   border-radius: 50%;
@@ -221,11 +199,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 9.1s linear infinite;
           animation: rotation 9.1s linear infinite;
-}
-
-.darken.d_11:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_12 {
@@ -240,11 +213,6 @@ div.container {
           animation: rotation 9.2s linear infinite;
 }
 
-.darken.d_12:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_13 {
   position: absolute;
   border-radius: 50%;
@@ -255,11 +223,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 9.3s linear infinite;
           animation: rotation 9.3s linear infinite;
-}
-
-.darken.d_13:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_14 {
@@ -274,11 +237,6 @@ div.container {
           animation: rotation 9.4s linear infinite;
 }
 
-.darken.d_14:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_15 {
   position: absolute;
   border-radius: 50%;
@@ -289,11 +247,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 9.5s linear infinite;
           animation: rotation 9.5s linear infinite;
-}
-
-.darken.d_15:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_16 {
@@ -308,11 +261,6 @@ div.container {
           animation: rotation 9.6s linear infinite;
 }
 
-.darken.d_16:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_17 {
   position: absolute;
   border-radius: 50%;
@@ -323,11 +271,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 9.7s linear infinite;
           animation: rotation 9.7s linear infinite;
-}
-
-.darken.d_17:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_18 {
@@ -342,11 +285,6 @@ div.container {
           animation: rotation 9.8s linear infinite;
 }
 
-.darken.d_18:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_19 {
   position: absolute;
   border-radius: 50%;
@@ -357,11 +295,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 9.9s linear infinite;
           animation: rotation 9.9s linear infinite;
-}
-
-.darken.d_19:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_20 {
@@ -376,11 +309,6 @@ div.container {
           animation: rotation 10s linear infinite;
 }
 
-.darken.d_20:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_21 {
   position: absolute;
   border-radius: 50%;
@@ -391,11 +319,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 10.1s linear infinite;
           animation: rotation 10.1s linear infinite;
-}
-
-.darken.d_21:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_22 {
@@ -410,11 +333,6 @@ div.container {
           animation: rotation 10.2s linear infinite;
 }
 
-.darken.d_22:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_23 {
   position: absolute;
   border-radius: 50%;
@@ -425,11 +343,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 10.3s linear infinite;
           animation: rotation 10.3s linear infinite;
-}
-
-.darken.d_23:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_24 {
@@ -444,11 +357,6 @@ div.container {
           animation: rotation 10.4s linear infinite;
 }
 
-.darken.d_24:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_25 {
   position: absolute;
   border-radius: 50%;
@@ -459,11 +367,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 10.5s linear infinite;
           animation: rotation 10.5s linear infinite;
-}
-
-.darken.d_25:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_26 {
@@ -478,11 +381,6 @@ div.container {
           animation: rotation 10.6s linear infinite;
 }
 
-.darken.d_26:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_27 {
   position: absolute;
   border-radius: 50%;
@@ -493,11 +391,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 10.7s linear infinite;
           animation: rotation 10.7s linear infinite;
-}
-
-.darken.d_27:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_28 {
@@ -512,11 +405,6 @@ div.container {
           animation: rotation 10.8s linear infinite;
 }
 
-.darken.d_28:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_29 {
   position: absolute;
   border-radius: 50%;
@@ -527,11 +415,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 10.9s linear infinite;
           animation: rotation 10.9s linear infinite;
-}
-
-.darken.d_29:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_30 {
@@ -546,11 +429,6 @@ div.container {
           animation: rotation 11s linear infinite;
 }
 
-.darken.d_30:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_31 {
   position: absolute;
   border-radius: 50%;
@@ -561,11 +439,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 11.1s linear infinite;
           animation: rotation 11.1s linear infinite;
-}
-
-.darken.d_31:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_32 {
@@ -580,11 +453,6 @@ div.container {
           animation: rotation 11.2s linear infinite;
 }
 
-.darken.d_32:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_33 {
   position: absolute;
   border-radius: 50%;
@@ -595,11 +463,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 11.3s linear infinite;
           animation: rotation 11.3s linear infinite;
-}
-
-.darken.d_33:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_34 {
@@ -614,11 +477,6 @@ div.container {
           animation: rotation 11.4s linear infinite;
 }
 
-.darken.d_34:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_35 {
   position: absolute;
   border-radius: 50%;
@@ -629,11 +487,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 11.5s linear infinite;
           animation: rotation 11.5s linear infinite;
-}
-
-.darken.d_35:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_36 {
@@ -648,11 +501,6 @@ div.container {
           animation: rotation 11.6s linear infinite;
 }
 
-.darken.d_36:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_37 {
   position: absolute;
   border-radius: 50%;
@@ -663,11 +511,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 11.7s linear infinite;
           animation: rotation 11.7s linear infinite;
-}
-
-.darken.d_37:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_38 {
@@ -682,11 +525,6 @@ div.container {
           animation: rotation 11.8s linear infinite;
 }
 
-.darken.d_38:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_39 {
   position: absolute;
   border-radius: 50%;
@@ -697,11 +535,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 11.9s linear infinite;
           animation: rotation 11.9s linear infinite;
-}
-
-.darken.d_39:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_40 {
@@ -716,11 +549,6 @@ div.container {
           animation: rotation 12s linear infinite;
 }
 
-.darken.d_40:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_41 {
   position: absolute;
   border-radius: 50%;
@@ -731,11 +559,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 12.1s linear infinite;
           animation: rotation 12.1s linear infinite;
-}
-
-.darken.d_41:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_42 {
@@ -750,11 +573,6 @@ div.container {
           animation: rotation 12.2s linear infinite;
 }
 
-.darken.d_42:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_43 {
   position: absolute;
   border-radius: 50%;
@@ -765,11 +583,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 12.3s linear infinite;
           animation: rotation 12.3s linear infinite;
-}
-
-.darken.d_43:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_44 {
@@ -784,11 +597,6 @@ div.container {
           animation: rotation 12.4s linear infinite;
 }
 
-.darken.d_44:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_45 {
   position: absolute;
   border-radius: 50%;
@@ -799,11 +607,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 12.5s linear infinite;
           animation: rotation 12.5s linear infinite;
-}
-
-.darken.d_45:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_46 {
@@ -818,11 +621,6 @@ div.container {
           animation: rotation 12.6s linear infinite;
 }
 
-.darken.d_46:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_47 {
   position: absolute;
   border-radius: 50%;
@@ -833,11 +631,6 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 12.7s linear infinite;
           animation: rotation 12.7s linear infinite;
-}
-
-.darken.d_47:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .darken.d_48 {
@@ -852,11 +645,6 @@ div.container {
           animation: rotation 12.8s linear infinite;
 }
 
-.darken.d_48:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_49 {
   position: absolute;
   border-radius: 50%;
@@ -869,11 +657,6 @@ div.container {
           animation: rotation 12.9s linear infinite;
 }
 
-.darken.d_49:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-}
-
 .darken.d_50 {
   position: absolute;
   border-radius: 50%;
@@ -884,10 +667,5 @@ div.container {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   -webkit-animation: rotation 13s linear infinite;
           animation: rotation 13s linear infinite;
-}
-
-.darken.d_50:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
 }
 /*# sourceMappingURL=main.css.map */
