@@ -1,24 +1,3 @@
-@keyframes rotation {
-  from {transform: rotate(360deg)}
-  to {transform: rotate(0deg)}
-}
-#darklight {
-  margin: 2em auto;
-  position: relative;
-  width: 60vw;
-  height: 50vw;
-  min-height: calc(0.5*600px);
-  max-height: calc(0.5*1400px);
-  min-width: calc(0.6*600px);
-  max-width: calc(0.6*1400px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-animation: rotation 16s linear infinite;
-  animation: rotation 16s linear infinite;
-}
-
-/*from sass*/
 .darken.d_0 {
   position: absolute;
   border-radius: 50%;
@@ -27,8 +6,8 @@
   background-color: #fffdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8s linear infinite;
-          animation: rotation 8s linear infinite;
+  -webkit-animation: rotation 0s linear infinite;
+          animation: rotation 0s linear infinite;
 }
 
 .darken.d_0:hover {
@@ -44,8 +23,8 @@
   background-color: #fff9f8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.1s linear infinite;
-          animation: rotation 8.1s linear infinite;
+  -webkit-animation: rotation 0.1s linear infinite;
+          animation: rotation 0.1s linear infinite;
 }
 
 .darken.d_1:hover {
@@ -61,8 +40,8 @@
   background-color: #fff6f3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.2s linear infinite;
-          animation: rotation 8.2s linear infinite;
+  -webkit-animation: rotation 0.2s linear infinite;
+          animation: rotation 0.2s linear infinite;
 }
 
 .darken.d_2:hover {
@@ -78,8 +57,8 @@
   background-color: #fff4ee;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.3s linear infinite;
-          animation: rotation 8.3s linear infinite;
+  -webkit-animation: rotation 0.3s linear infinite;
+          animation: rotation 0.3s linear infinite;
 }
 
 .darken.d_3:hover {
@@ -95,8 +74,8 @@
   background-color: #fff3e9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.4s linear infinite;
-          animation: rotation 8.4s linear infinite;
+  -webkit-animation: rotation 0.4s linear infinite;
+          animation: rotation 0.4s linear infinite;
 }
 
 .darken.d_4:hover {
@@ -112,8 +91,8 @@
   background-color: #fff4e4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.5s linear infinite;
-          animation: rotation 8.5s linear infinite;
+  -webkit-animation: rotation 0.5s linear infinite;
+          animation: rotation 0.5s linear infinite;
 }
 
 .darken.d_5:hover {
@@ -129,8 +108,8 @@
   background-color: #fff6df;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.6s linear infinite;
-          animation: rotation 8.6s linear infinite;
+  -webkit-animation: rotation 0.6s linear infinite;
+          animation: rotation 0.6s linear infinite;
 }
 
 .darken.d_6:hover {
@@ -146,8 +125,8 @@
   background-color: #fff9da;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.7s linear infinite;
-          animation: rotation 8.7s linear infinite;
+  -webkit-animation: rotation 0.7s linear infinite;
+          animation: rotation 0.7s linear infinite;
 }
 
 .darken.d_7:hover {
@@ -163,8 +142,8 @@
   background-color: #fffdd5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.8s linear infinite;
-          animation: rotation 8.8s linear infinite;
+  -webkit-animation: rotation 0.8s linear infinite;
+          animation: rotation 0.8s linear infinite;
 }
 
 .darken.d_8:hover {
@@ -180,8 +159,8 @@
   background-color: #fbffd0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 8.9s linear infinite;
-          animation: rotation 8.9s linear infinite;
+  -webkit-animation: rotation 0.9s linear infinite;
+          animation: rotation 0.9s linear infinite;
 }
 
 .darken.d_9:hover {
@@ -197,8 +176,8 @@
   background-color: #f5ffcb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9s linear infinite;
-          animation: rotation 9s linear infinite;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
 }
 
 .darken.d_10:hover {
@@ -214,8 +193,8 @@
   background-color: #edffc5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.1s linear infinite;
-          animation: rotation 9.1s linear infinite;
+  -webkit-animation: rotation 1.1s linear infinite;
+          animation: rotation 1.1s linear infinite;
 }
 
 .darken.d_11:hover {
@@ -231,8 +210,8 @@
   background-color: #e3ffc0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.2s linear infinite;
-          animation: rotation 9.2s linear infinite;
+  -webkit-animation: rotation 1.2s linear infinite;
+          animation: rotation 1.2s linear infinite;
 }
 
 .darken.d_12:hover {
@@ -248,8 +227,8 @@
   background-color: #d9ffbb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.3s linear infinite;
-          animation: rotation 9.3s linear infinite;
+  -webkit-animation: rotation 1.3s linear infinite;
+          animation: rotation 1.3s linear infinite;
 }
 
 .darken.d_13:hover {
@@ -265,8 +244,8 @@
   background-color: #ceffb6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.4s linear infinite;
-          animation: rotation 9.4s linear infinite;
+  -webkit-animation: rotation 1.4s linear infinite;
+          animation: rotation 1.4s linear infinite;
 }
 
 .darken.d_14:hover {
@@ -282,8 +261,8 @@
   background-color: #c1ffb1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.5s linear infinite;
-          animation: rotation 9.5s linear infinite;
+  -webkit-animation: rotation 1.5s linear infinite;
+          animation: rotation 1.5s linear infinite;
 }
 
 .darken.d_15:hover {
@@ -299,8 +278,8 @@
   background-color: #b3ffac;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.6s linear infinite;
-          animation: rotation 9.6s linear infinite;
+  -webkit-animation: rotation 1.6s linear infinite;
+          animation: rotation 1.6s linear infinite;
 }
 
 .darken.d_16:hover {
@@ -316,8 +295,8 @@
   background-color: #a7ffab;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.7s linear infinite;
-          animation: rotation 9.7s linear infinite;
+  -webkit-animation: rotation 1.7s linear infinite;
+          animation: rotation 1.7s linear infinite;
 }
 
 .darken.d_17:hover {
@@ -333,8 +312,8 @@
   background-color: #a2ffb1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.8s linear infinite;
-          animation: rotation 9.8s linear infinite;
+  -webkit-animation: rotation 1.8s linear infinite;
+          animation: rotation 1.8s linear infinite;
 }
 
 .darken.d_18:hover {
@@ -350,8 +329,8 @@
   background-color: #9dffb8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 9.9s linear infinite;
-          animation: rotation 9.9s linear infinite;
+  -webkit-animation: rotation 1.9s linear infinite;
+          animation: rotation 1.9s linear infinite;
 }
 
 .darken.d_19:hover {
@@ -367,8 +346,8 @@
   background-color: #98ffc1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10s linear infinite;
-          animation: rotation 10s linear infinite;
+  -webkit-animation: rotation 2s linear infinite;
+          animation: rotation 2s linear infinite;
 }
 
 .darken.d_20:hover {
@@ -384,8 +363,8 @@
   background-color: #93ffcb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.1s linear infinite;
-          animation: rotation 10.1s linear infinite;
+  -webkit-animation: rotation 2.1s linear infinite;
+          animation: rotation 2.1s linear infinite;
 }
 
 .darken.d_21:hover {
@@ -401,8 +380,8 @@
   background-color: #8effd6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.2s linear infinite;
-          animation: rotation 10.2s linear infinite;
+  -webkit-animation: rotation 2.2s linear infinite;
+          animation: rotation 2.2s linear infinite;
 }
 
 .darken.d_22:hover {
@@ -418,8 +397,8 @@
   background-color: #89ffe3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.3s linear infinite;
-          animation: rotation 10.3s linear infinite;
+  -webkit-animation: rotation 2.3s linear infinite;
+          animation: rotation 2.3s linear infinite;
 }
 
 .darken.d_23:hover {
@@ -435,8 +414,8 @@
   background-color: #84fff0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.4s linear infinite;
-          animation: rotation 10.4s linear infinite;
+  -webkit-animation: rotation 2.4s linear infinite;
+          animation: rotation 2.4s linear infinite;
 }
 
 .darken.d_24:hover {
@@ -452,8 +431,8 @@
   background-color: #7fffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.5s linear infinite;
-          animation: rotation 10.5s linear infinite;
+  -webkit-animation: rotation 2.5s linear infinite;
+          animation: rotation 2.5s linear infinite;
 }
 
 .darken.d_25:hover {
@@ -469,8 +448,8 @@
   background-color: #7aefff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.6s linear infinite;
-          animation: rotation 10.6s linear infinite;
+  -webkit-animation: rotation 2.6s linear infinite;
+          animation: rotation 2.6s linear infinite;
 }
 
 .darken.d_26:hover {
@@ -486,8 +465,8 @@
   background-color: #75deff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.7s linear infinite;
-          animation: rotation 10.7s linear infinite;
+  -webkit-animation: rotation 2.7s linear infinite;
+          animation: rotation 2.7s linear infinite;
 }
 
 .darken.d_27:hover {
@@ -503,8 +482,8 @@
   background-color: #70cbff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.8s linear infinite;
-          animation: rotation 10.8s linear infinite;
+  -webkit-animation: rotation 2.8s linear infinite;
+          animation: rotation 2.8s linear infinite;
 }
 
 .darken.d_28:hover {
@@ -520,8 +499,8 @@
   background-color: #6bb8ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 10.9s linear infinite;
-          animation: rotation 10.9s linear infinite;
+  -webkit-animation: rotation 2.9s linear infinite;
+          animation: rotation 2.9s linear infinite;
 }
 
 .darken.d_29:hover {
@@ -537,8 +516,8 @@
   background-color: #66a3ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11s linear infinite;
-          animation: rotation 11s linear infinite;
+  -webkit-animation: rotation 3s linear infinite;
+          animation: rotation 3s linear infinite;
 }
 
 .darken.d_30:hover {
@@ -554,8 +533,8 @@
   background-color: #608dff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.1s linear infinite;
-          animation: rotation 11.1s linear infinite;
+  -webkit-animation: rotation 3.1s linear infinite;
+          animation: rotation 3.1s linear infinite;
 }
 
 .darken.d_31:hover {
@@ -571,8 +550,8 @@
   background-color: #5b76ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.2s linear infinite;
-          animation: rotation 11.2s linear infinite;
+  -webkit-animation: rotation 3.2s linear infinite;
+          animation: rotation 3.2s linear infinite;
 }
 
 .darken.d_32:hover {
@@ -588,8 +567,8 @@
   background-color: #565dff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.3s linear infinite;
-          animation: rotation 11.3s linear infinite;
+  -webkit-animation: rotation 3.3s linear infinite;
+          animation: rotation 3.3s linear infinite;
 }
 
 .darken.d_33:hover {
@@ -605,8 +584,8 @@
   background-color: #5f51ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.4s linear infinite;
-          animation: rotation 11.4s linear infinite;
+  -webkit-animation: rotation 3.4s linear infinite;
+          animation: rotation 3.4s linear infinite;
 }
 
 .darken.d_34:hover {
@@ -622,8 +601,8 @@
   background-color: #704cff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.5s linear infinite;
-          animation: rotation 11.5s linear infinite;
+  -webkit-animation: rotation 3.5s linear infinite;
+          animation: rotation 3.5s linear infinite;
 }
 
 .darken.d_35:hover {
@@ -639,8 +618,8 @@
   background-color: #8247ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.6s linear infinite;
-          animation: rotation 11.6s linear infinite;
+  -webkit-animation: rotation 3.6s linear infinite;
+          animation: rotation 3.6s linear infinite;
 }
 
 .darken.d_36:hover {
@@ -656,8 +635,8 @@
   background-color: #9542ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.7s linear infinite;
-          animation: rotation 11.7s linear infinite;
+  -webkit-animation: rotation 3.7s linear infinite;
+          animation: rotation 3.7s linear infinite;
 }
 
 .darken.d_37:hover {
@@ -673,8 +652,8 @@
   background-color: #aa3dff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.8s linear infinite;
-          animation: rotation 11.8s linear infinite;
+  -webkit-animation: rotation 3.8s linear infinite;
+          animation: rotation 3.8s linear infinite;
 }
 
 .darken.d_38:hover {
@@ -690,8 +669,8 @@
   background-color: #bf38ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 11.9s linear infinite;
-          animation: rotation 11.9s linear infinite;
+  -webkit-animation: rotation 3.9s linear infinite;
+          animation: rotation 3.9s linear infinite;
 }
 
 .darken.d_39:hover {
@@ -707,8 +686,8 @@
   background-color: #d633ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12s linear infinite;
-          animation: rotation 12s linear infinite;
+  -webkit-animation: rotation 4s linear infinite;
+          animation: rotation 4s linear infinite;
 }
 
 .darken.d_40:hover {
@@ -724,8 +703,8 @@
   background-color: #ee2eff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.1s linear infinite;
-          animation: rotation 12.1s linear infinite;
+  -webkit-animation: rotation 4.1s linear infinite;
+          animation: rotation 4.1s linear infinite;
 }
 
 .darken.d_41:hover {
@@ -741,8 +720,8 @@
   background-color: #ff29f6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.2s linear infinite;
-          animation: rotation 12.2s linear infinite;
+  -webkit-animation: rotation 4.2s linear infinite;
+          animation: rotation 4.2s linear infinite;
 }
 
 .darken.d_42:hover {
@@ -758,8 +737,8 @@
   background-color: #ff24dc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.3s linear infinite;
-          animation: rotation 12.3s linear infinite;
+  -webkit-animation: rotation 4.3s linear infinite;
+          animation: rotation 4.3s linear infinite;
 }
 
 .darken.d_43:hover {
@@ -775,8 +754,8 @@
   background-color: #ff1fc0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.4s linear infinite;
-          animation: rotation 12.4s linear infinite;
+  -webkit-animation: rotation 4.4s linear infinite;
+          animation: rotation 4.4s linear infinite;
 }
 
 .darken.d_44:hover {
@@ -792,8 +771,8 @@
   background-color: #ff1aa3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.5s linear infinite;
-          animation: rotation 12.5s linear infinite;
+  -webkit-animation: rotation 4.5s linear infinite;
+          animation: rotation 4.5s linear infinite;
 }
 
 .darken.d_45:hover {
@@ -809,8 +788,8 @@
   background-color: #ff1585;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.6s linear infinite;
-          animation: rotation 12.6s linear infinite;
+  -webkit-animation: rotation 4.6s linear infinite;
+          animation: rotation 4.6s linear infinite;
 }
 
 .darken.d_46:hover {
@@ -826,8 +805,8 @@
   background-color: #ff1066;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.7s linear infinite;
-          animation: rotation 12.7s linear infinite;
+  -webkit-animation: rotation 4.7s linear infinite;
+          animation: rotation 4.7s linear infinite;
 }
 
 .darken.d_47:hover {
@@ -843,8 +822,8 @@
   background-color: #ff0b45;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.8s linear infinite;
-          animation: rotation 12.8s linear infinite;
+  -webkit-animation: rotation 4.8s linear infinite;
+          animation: rotation 4.8s linear infinite;
 }
 
 .darken.d_48:hover {
@@ -860,8 +839,8 @@
   background-color: #ff0624;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 12.9s linear infinite;
-          animation: rotation 12.9s linear infinite;
+  -webkit-animation: rotation 4.9s linear infinite;
+          animation: rotation 4.9s linear infinite;
 }
 
 .darken.d_49:hover {
@@ -877,8 +856,8 @@
   background-color: #ff0101;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-  -webkit-animation: rotation 13s linear infinite;
-          animation: rotation 13s linear infinite;
+  -webkit-animation: rotation 5s linear infinite;
+          animation: rotation 5s linear infinite;
 }
 
 .darken.d_50:hover {
