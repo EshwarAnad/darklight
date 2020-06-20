@@ -2,20 +2,25 @@
   from {transform: rotate(360deg)}
   to {transform: rotate(0deg)}
 }
+div.container {
+  margin: 1.5em auto;
+  width: 75%;
+  line-height: 1.6;
+  min-height: 60vw;
+}
 #darklight {
   margin: 2em auto;
   position: relative;
-  width: 60vw;
-  height: 50vw;
-  min-height: calc(0.5*600px);
-  max-height: calc(0.5*1400px);
-  min-width: calc(0.6*600px);
-  max-width: calc(0.6*1400px);
+  width: 50vw;
+  height: 60vw;
+  min-height: calc(0.6*600px);
+  max-height: calc(0.6*1400px);
+  min-width: calc(0.5*600px);
+  max-width: calc(0.5*1400px);
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: rotation 16s linear infinite;
-  animation: rotation 16s linear infinite;
+  border-radius: 50%;
 }
 
 /*from sass*/
